@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- the description -->
+    <meta name="description" content="This is a site that provides food and recipes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the logo -->
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- link el bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- link el fontawesome -->
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+
+    <div id="searchContainer">
+        <div class="SideNav position-fixed d-flex ">
+
+            <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100  p-4">
+                <div class="links">
+                    <ul class="allData list-unstyled overflow-hidden">
+                        <a href="../Search/index.html">
+                            <li id="searchContainerBtn" onclick="showSearchInputs()"
+                                class="py-2 position-relative cursor-pointer" data-category="search">Search</li>
+                        </a>
+                        <a href="../Categories/index.html">
+                            <li id="Categories" onclick="showCategoriesInputs()"
+                                class="py-2 position-relative cursor-pointer" data-category="categories">Categories</li>
+                        </a>
+                        <a href="../Area/index.html">
+                            <li id="Area" onclick="showAreaInputs()" class="py-2 position-relative cursor-pointer"
+                                data-category="area">Area
+                            </li>
+                        </a>
+                        <a href="../Ingredients/index.html">
+                            <li id="Ingredients" onclick="showIngredientsInputs()"
+                                class="py-2 position-relative cursor-pointer" data-category="ingredients">Ingredients
+                            </li>
+                        </a>
+                        <a href="../Contact Us/index.html">
+                            <li id="Contact" onclick="showContactInputs()" class="py-2 position-relative cursor-pointer"
+                                data-category="contact">Contact Us</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-header  py-4 px-2 ">
+                <img src="../images/logo.png" alt="logo">
+
+                <i class="open-close-item fa-solid open-close-icon fa-2x  fa-x "></i>
+                <i class="open-close-item1 fa-solid open-close-icon fa-2x fa-align-justify   "></i>
+
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container ">
+            <div id="searchData"
+                class="row searchInput py-4 d-flex justify-content-center align-items-center text-center">
+                <div class="col-md-6">
+                    <input type="text" placeholder="Search By Name" id="searchByName"
+                        class="form-control bg-transparent text-white searchByname ">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Search By First Letter" id="searchByfl"
+                        class="form-control bg-transparent text-white searchByfl">
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative">
+
+            <div class=" row py-5 g-4 " id="rowData" >
+              
+          
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="../j.s/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="../j.s/bootstrap.bundle.min.js"></script>
+    <script src="../Search/search.js"></script>
+</body>
+
+</html>

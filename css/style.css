@@ -1,0 +1,95 @@
+/* section el main page */
+body {
+    background-color: black;
+    color: #f9f6f6 !important;
+}
+.loading-screen{
+display: none;
+    z-index: 999;
+
+}
+#rowData .item .meal  {
+   position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#rowData .item .meal-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #f9f6f6bc;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.5s ease-in-out all;
+}
+
+#rowData .item .meal:hover .meal-layer{
+    top: 0;
+}
+
+
+/* side nav */
+.links ul a {
+
+    top: 0px;
+text-decoration: none;
+color: white;
+list-style: none;
+
+}
+.SideNav{
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    background-color: black;
+    width: 320px;
+
+}
+
+.nav-header{
+    top: 0;
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+.X-icon{
+    cursor: pointer;
+}
+.nav-header img{
+    width: 90%;
+
+}
+
+
+/* searchInput */
+
+
+/* category sectoin */
+
+#categoriesSection  .meal-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #f9f6f6bc;
+  text-align: center;
+  padding: 10px;
+    padding-left: 10px;
+    transition: 0.5s ease-in-out all;
+}
+
+#categoriesSection  .meal:hover .meal-layer{
+    top: 0;
+}
+
+
+
